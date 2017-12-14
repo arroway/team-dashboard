@@ -48,7 +48,7 @@ class Metrics():
                 self.get_bugs(self.bugs.data, keywords=severity, resolution='---')
                 self.compute_metrics(severity)
 
-        # TODO: replace code above to avoid querying Bugzilla again
+        # TODO: replace code below to avoid querying Bugzilla again
         else:
             #get bugs for each component, and for each severity rate that is specified
             self.bugs.clear()
@@ -127,7 +127,8 @@ class Metrics():
         return nb_open, nb_closed
 
 if __name__ == "__main__":
-    # Get metrics for all components and all severity types
+    """Get metrics for all components and all severity types
+    """
     allbugs = Metrics()
     allbugs.get_metrics()
 
