@@ -102,3 +102,6 @@ ENV/
 
 # libmozdata
 mozdata.ini
+
+# get_metrics
+output.json
